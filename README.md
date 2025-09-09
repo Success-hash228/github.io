@@ -9,24 +9,25 @@ This website is a showcase of my **skills, projects, and experiences** as a deve
 ---
 
 ## 📖 About
-I am **Oloyede Success Oluwasegunfunmi**, a passionate student, aspiring surgeon, and tech enthusiast.  
-This portfolio highlights my journey in **web development, UI/UX design, and digital creativity**, alongside my academic achievements.  
+I am **Oloyede Success Oluwasegunfunmi**, a passionate student, aspiring surgeon, and tech expert.  
+This portfolio highlights my journey in **web development, UI/UX design, beta reeading, copywriting, and digital creativity**, alongside my academic achievements.  
 
 ---
 
 ## 🛠️ Technologies Used
 - **HTML5**  
 - **CSS3**  
-- **JavaScript (ES6)**  
+- **JavaScript (ES6)**
+- Node.js
 - **Responsive Design (Mobile-first approach)**  
 
 ---
 
 ## 📂 Projects Included
 - 🌟 Personal Portfolio Website (this site!)  
-- 🎮 RANGERS — An educational adventure game concept  
-- 🧪 WAEC/NECO Practical Simulations & Study Tools  
-- ✍️ Essays, Poetry, and Competition Submissions  
+- ↝  Taskflow- a website that allows seamless execution of to-do lists, powered by virtual assistants with no stress. 
+- 🧪 Posterlab, a flawless, stunning graphic design for a global convention, directly conveying the information without voice.  
+- ✍️ Beta Reading, Copywriting, Essays, Poetry, and Competition Submissions  assistance.
 
 ---
 

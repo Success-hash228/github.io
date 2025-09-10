@@ -9,7 +9,7 @@ This website is a showcase of my **skills, projects, and experiences** as a deve
 ---
 
 ## 📖 About
-I am **Oloyede Success Oluwasegunfunmi**, a passionate student, aspiring surgeon, and tech expert.  
+I am **Success Wrights**, a passionate student, aspiring surgeon, and tech expert.  
 This portfolio highlights my journey in **web development, UI/UX design, beta reeading, copywriting, and digital creativity**, alongside my academic achievements.  
 
 ---

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Projects — Success Wrights</title>
+  <meta name="description" content="Projects by Success Wrights showcasing web development, UI/UX, and graphics." />
+  
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  
+  <!-- Styles and scripts -->
+  <link rel="stylesheet" href="../styles.css" />
+  <script defer src="../scripts.js"></script>
+  <script src="https://kit.fontawesome.com/6d5bb4e0ab.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <a class="logo" href="../index.html">SW.</a>
+    <nav class="nav">
+      <a href="../index.html#about">About</a>
+      <a href="../projects/index.html">Projects</a>
+      <a href="../index.html#contact">Contact</a>
+      <button id="themeToggle" class="icon-btn" aria-label="Toggle theme">
+        <i class="fa-solid fa-moon"></i>
+      </button>
+    </nav>
+  </header>
+
+  <!-- Main content -->
+  <main class="page">
+    <div class="container">
+      <h1>Projects</h1>
+      <p class="sub">A selection of multi-skill case studies. Each page includes overview, stack, and outcomes.</p>
+
+      <h2 id="web">Web Development</h2>
+      <div class="grid-cards">
+        <article class="card">
+          <a href="fintrack.html" class="card-link">
+            <img src="../assets/images/fintrack.png" alt="FinTrack App Screenshot" class="project-image" />
+            <div class="card-body">
+              <h3>FinTrack — Personal Finance Web App</h3>
+              <p>Budget analytics, offline PWA, accessible charts.</p>
+            </div>
+          </a>
+        </article>
+
+        <article class="card">
+          <a href="taskflow.html" class="card-link">
+            <img src="../assets/images/taskflow.png" alt="TaskFlow Productivity Suite Screenshot" class="project-image" />
+            <div class="card-body">
+              <h3>TaskFlow — Team Productivity Suite</h3>
+              <p>Kanban, real-time sync, and role-based access.</p>
+            </div>
+          </a>
+        </article>
+
+        <article class="card">
+          <a href="citybites.html" class="card-link">
+            <img src="../assets/images/citybites.png" alt="CityBites Restaurant Website Screenshot" class="project-image" />
+            <div class="card-body">
+              <h3>CityBites — Restaurant Website</h3>
+              <p>SEO-friendly site with menu CMS and booking.</p>
+            </div>
+          </a>
+        </article>
+      </div>
+
+      <h2 id="uiux" style="margin-top:32px;">UI/UX Design</h2>
+      <div class="grid-cards">
+        <article class="card">
+          <a href="shopswift.html" class="card-link">
+            <img src="../assets/images/shopswift.png" alt="ShopSwift UI Kit Screenshot" class="project-image" />
+            <div class="card-body">
+              <h3>ShopSwift — E-commerce UI Kit</h3>
+              <p>Design tokens, flows, and reusable components.</p>
+            </div>
+          </a>
+        </article>
+
+        <article class="card">
+          <a href="beta-reading.html" class="card-link">
+            <img src="../assets/images/beta-reading.png" alt="Beta Reading Screenshot" class="project-image" />
+            <div class="card-body">
+              <h3>📖 Beta Reading</h3>
+              <p>Helping writers improve clarity, flow, and engagement.</p>
+            </div>
+          </a>
+        </article>
+      </div>
+
+      <h2 id="graphics" style="margin-top:32px;">Graphic Design</h2>
+      <div class="grid-cards">
+        <article class="card">
+          <a href="brandnova.html" class="card-link">
+            <img src="../assets/images/brandnova.png" alt="BrandNova Visual Identity Screenshot" class="project-image" />
+            <div class="card-body">
+              <h3>BrandNova — Visual Identity Pack</h3>
+              <p>Logo system, posters, and social templates.</p>
+            </div>
+          </a>
+        </article>
+
+        <article class="card">
+          <a href="posterlab.html" class="card-link">
+            <img src="../assets/images/posterlab.png" alt="PosterLab Screenshot" class="project-image" />
+            <div class="card-body">
+              <h3>PosterLab — Event Campaign Series</h3>
+              <p>High-impact poster set for tech summits.</p>
+            </div>
+          </a>
+        </article>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Success Wrights.</p>
+      <div class="socials">
+        <a href="https://t.me/LEAD_STARDOM" target="_blank" rel="noopener" aria-label="Telegram">
+          <i class="fa-brands fa-telegram"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/oloyede-success-249109303" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a href="https://www.facebook.com/profile.php?id=61552124602470" target="_blank" rel="noopener" aria-label="Facebook">
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

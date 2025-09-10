@@ -1,0 +1,245 @@
+/* =========================
+   RESET & BASE
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Dynamic homepage background */
+#dynamic-bg {
+  position: fixed;
+  top: 0; 
+  left: 0;
+  width: 100%; 
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1; /* keeps it behind all content */
+  transition: background-image 1s ease-in-out;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: var(--background);
+  color: var(--text);
+  line-height: 1.6;
+  transition: background 0.4s ease, color 0.4s ease;
+}
+
+:root {
+  --background: #0f0f1a;
+  --text: #e4e4e4;
+  --primary: #7c5cff;
+  --primary-2: #00e6a7;
+  --muted: #6f6f7a;
+}
+
+.light {
+  --background: #ffffff;
+  --text: #111111;
+  --primary: #5f3dc4;
+  --primary-2: #0ac27d;
+  --muted: #c5c5c5;
+}
+
+/* =========================
+   HEADERS & TYPOGRAPHY
+========================= */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  color: var(--text);
+}
+
+p {
+  margin: 10px 0;
+}
+
+/* =========================
+   THEME TOGGLE
+========================= */
+#themeToggle {
+  position: fixed;
+  top: 16px;
+  right: 16px;
+  background: rgba(30,30,60,0.35);
+  border: 1px solid rgba(124,92,255,0.25);
+  padding: 10px 12px;
+  border-radius: 12px;
+  color: var(--primary);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+#themeToggle:hover {
+  background: rgba(124,92,255,0.2);
+  transform: scale(1.1);
+}
+
+/* =========================
+   TYPING EFFECT
+========================= */
+#typed {
+  font-size: 1.3rem;
+  color: var(--primary);
+  font-weight: 600;
+  min-height: 24px;
+}
+
+/* =========================
+   PARALLAX ELEMENTS
+========================= */
+.parallax {
+  will-change: transform;
+  transition: transform 0.2s ease-out;
+}
+
+/* =========================
+   SECTIONS
+========================= */
+.section {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease-out;
+}
+.section.visible {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.1s;
+}
+
+/* =========================
+   CONTACT FORM
+========================= */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 20px;
+  background: rgba(30,30,60,0.25);
+  border-radius: 16px;
+  border: 1px solid rgba(124,92,255,0.2);
+  box-shadow: inset 0 4px 10px rgba(0,0,0,0.25);
+}
+form input, form textarea, form button {
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid rgba(124,92,255,0.25);
+  outline: none;
+  font-size: 1rem;
+}
+form input, form textarea {
+  background: rgba(255,255,255,0.05);
+  color: var(--text);
+}
+form button {
+  background: var(--primary);
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+form button:hover {
+  background: var(--primary-2);
+  box-shadow: 0 0 14px rgba(0,230,167,0.35);
+}
+
+/* =========================
+   DYNAMIC YEAR
+========================= */
+#year {
+  font-weight: 600;
+  color: var(--primary);
+}
+
+/* =========================
+   GAUGE METER
+========================= */
+.gauge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.gauge svg { 
+  width: 120px; 
+  height: 120px; 
+  transform: rotate(-90deg); 
+}
+.gauge .bg { 
+  fill: none; 
+  stroke: color-mix(in oklab, var(--muted), transparent 60%); 
+  stroke-width: 10; 
+}
+.gauge .meter { 
+  fill: none; 
+  stroke: var(--primary); 
+  stroke-width: 10; 
+  stroke-linecap: round; 
+  stroke-dasharray: 326; /* circumference */
+  stroke-dashoffset: 326; /* hidden initially */
+  transition: stroke-dashoffset 1.2s ease-in-out;
+}
+.gauge-label { 
+  margin-top: 12px; 
+  font-weight: 600; 
+  color: var(--text);
+}
+
+/* =========================
+   SKILL CARDS - GLASS STYLE
+========================= */
+.skill.glass .gauge { 
+  background: rgba(30, 30, 60, 0.25); 
+  border: 1.5px solid rgba(124,92,255,0.14); 
+  border-radius: 16px; 
+  box-shadow: inset 0 2px 8px rgba(0,0,0,0.3); 
+  padding: 16px;
+}
+.skill.glass .gauge-label { 
+  margin-top: 10px; 
+  font-weight: 600; 
+  color: var(--text); 
+  text-shadow: 0 0 6px rgba(124,92,255,0.4); 
+}
+
+/* =========================
+   SOCIAL ICONS
+========================= */
+.socials { 
+  display: flex; 
+  gap: 16px; 
+  justify-content: center; 
+  align-items: center; 
+  margin-top: 20px;
+}
+.socials a { 
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  width: 44px; 
+  height: 44px; 
+  border-radius: 12px; 
+  background: rgba(30,30,60,0.25); 
+  border: 1px solid rgba(124,92,255,0.18); 
+  color: var(--primary); 
+  font-size: 1.2rem; 
+  transition: all 0.25s ease; 
+  box-shadow: 0 0 12px rgba(124,92,255,0.15), inset 0 0 6px rgba(0,230,167,0.1);
+}
+.socials a:hover { 
+  color: #fff; 
+  background: linear-gradient(135deg, var(--primary), var(--primary-2)); 
+  box-shadow: 0 0 20px rgba(124,92,255,0.5), 0 0 40px rgba(0,230,167,0.35); 
+  transform: translateY(-3px) scale(1.05); 
+}
+.socials a:active { 
+  transform: translateY(0) scale(0.95); 
+  box-shadow: 0 0 12px rgba(124,92,255,0.25), inset 0 0 6px rgba(0,230,167,0.2); 
+}

@@ -4,7 +4,7 @@
 Welcome to my personal portfolio!  
 This website is a showcase of my **skills, projects, and experiences** as a developer and creative thinker.  
 
-🚀 **Live Website:** [success-hash228.github.io](https://success-hash228.github.io)
+🚀 **Live Website:** [success-hash228.github.io](https://success-hash228.github.io/github.io)
 
 ---
 
@@ -34,7 +34,7 @@ This portfolio highlights my journey in **web development, UI/UX design, beta re
 ## 📬 Contact Me
 💼 **LinkedIn:** [https://www.linkedin.com/in/oloyede-success-249109303](#)  
 📧 **Email:** webscientist.success@gmail.com  
-🌍 **Portfolio:** [success-hash228.github.io](https://success-hash228.github.io)
+🌍 **Portfolio:** [success-hash228.github.io](https://success-hash228.github.io/github.io)
 
 ---
 

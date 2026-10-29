@@ -73,9 +73,7 @@
       'Web Developer',
       'Designer',
       'Full Stack Engineer',
-      'UI/UX Enthusiast' ,
-      'Beta Reader' ,
-      'Copywriter'
+      'UI/UX Enthusiast'
     ];
     const typedEl = document.getElementById('typed');
     if (!typedEl) return;
